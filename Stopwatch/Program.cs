@@ -7,7 +7,6 @@ namespace Stopwatch
     {
         static void Main(string[] args)
         {
-            // Start(6);
             Menu();
         }
 
