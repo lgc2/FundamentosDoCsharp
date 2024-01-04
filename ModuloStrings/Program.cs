@@ -1,4 +1,48 @@
-﻿/*
+﻿// === MÉTODOS ADICIONAIS ===
+var texto = "Este texto é um teste";
+Console.WriteLine(texto.ToLower());
+Console.WriteLine(texto.ToUpper());
+Console.WriteLine(texto.Insert(5, "AQUI "));
+Console.WriteLine(texto.Remove(5, 0));
+Console.WriteLine(texto.Length);
+
+
+/*
+// === ÍNDICES ===
+var texto = "Este texto é um teste ";
+Console.WriteLine(texto.IndexOf("um"));
+Console.WriteLine(texto.LastIndexOf("s"));
+*/
+
+/*
+// === EQUALS ===
+var texto = "Este texto é um teste ";
+Console.WriteLine(texto.Equals("Este texto é um teste ")); // true
+Console.WriteLine(texto.Equals("Este texto é um teste")); // false
+*/
+
+/*
+// ==  StartsWith/EndsWith ===
+var texto = "Este texto é um teste ";
+Console.WriteLine(texto.StartsWith("Este")); // true
+Console.WriteLine(texto.StartsWith("este", StringComparison.OrdinalIgnoreCase)); // true
+Console.WriteLine(texto.EndsWith("ste ")); // true
+Console.WriteLine(texto.EndsWith("ste")); // false
+*/
+
+/*
+// === COMPARAÇÃO DE STRINGS ===
+var texto = "Testando";
+Console.WriteLine(texto.CompareTo("Testando")); // 0
+Console.WriteLine(texto.CompareTo("testando")); // 1
+
+var texto2 = "Este é um teste!";
+Console.WriteLine(texto2.Contains("teste")); // true
+Console.WriteLine(texto2.Contains("Teste")); // false
+Console.WriteLine(texto2.Contains("Teste", StringComparison.OrdinalIgnoreCase)); // true
+*/
+
+/*
 // === INTERPOLAÇÃO DE STRINGS ===
 var price = 10.2;
 var texto1 = "O preço do produto é " + price + " apenas na promoção!";
