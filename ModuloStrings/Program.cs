@@ -1,4 +1,5 @@
-﻿// === INTERPOLAÇÃO DE STRINGS ===
+﻿/*
+// === INTERPOLAÇÃO DE STRINGS ===
 var price = 10.2;
 var texto1 = "O preço do produto é " + price + " apenas na promoção!";
 var texto2 = string.Format("O preço do produto é {0} apenas na promoção!", price);
@@ -9,6 +10,7 @@ Console.WriteLine(texto1);
 Console.WriteLine(texto2);
 Console.WriteLine(texto3);
 Console.WriteLine(texto4);
+*/
 
 
 /*
