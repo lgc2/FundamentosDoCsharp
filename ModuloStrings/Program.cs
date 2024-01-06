@@ -1,11 +1,45 @@
-﻿// === MÉTODOS ADICIONAIS ===
+﻿using System.Text;
+
+// === StringBuilder  ===
+var texto = new StringBuilder();
+texto.Append("Este");
+texto.Append(" texto");
+texto.Append(" é");
+texto.Append(" um");
+texto.Append(" teste");
+
+texto.ToString();
+Console.WriteLine(texto);
+
+/*
+// === MANIPULANDO STRINGS ===
+var texto = "Este texto é um teste";
+Console.WriteLine(texto);
+Console.WriteLine(texto.Replace("Este", "eSSe"));
+
+var textoDividido = texto.Split(" ");
+foreach (var palavra in textoDividido)
+{
+    Console.WriteLine(palavra);
+}
+
+var textoSubstring = texto.Substring(5, 5);
+Console.WriteLine($"Substring: {textoSubstring}");
+
+var texto2 = " Este texto é um teste ";
+Console.WriteLine(texto2);
+Console.WriteLine(texto2.Trim());
+*/
+
+/*
+// === MÉTODOS ADICIONAIS ===
 var texto = "Este texto é um teste";
 Console.WriteLine(texto.ToLower());
 Console.WriteLine(texto.ToUpper());
 Console.WriteLine(texto.Insert(5, "AQUI "));
 Console.WriteLine(texto.Remove(5, 0));
 Console.WriteLine(texto.Length);
-
+*/
 
 /*
 // === ÍNDICES ===
@@ -55,7 +89,6 @@ Console.WriteLine(texto2);
 Console.WriteLine(texto3);
 Console.WriteLine(texto4);
 */
-
 
 /*
 // === GUID ===
