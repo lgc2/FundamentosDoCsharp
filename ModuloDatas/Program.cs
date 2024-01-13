@@ -1,4 +1,40 @@
-﻿var dataUtc = DateTime.UtcNow;
+﻿Console.WriteLine(DateTime.DaysInMonth(2024, 2)); // no C# o mês (Janeiro) começa em 1
+
+var dataBrasil = DateTime.UtcNow.AddHours(-3);
+Console.WriteLine(dataBrasil);
+Console.WriteLine(dataBrasil.DayOfWeek);
+Console.WriteLine($"hoje é fds? {IsWeekend(dataBrasil.DayOfWeek)}");
+
+static bool IsWeekend(DayOfWeek today)
+{
+    return today == DayOfWeek.Saturday || today == DayOfWeek.Sunday;
+}
+
+
+/*
+var timeSpan = new TimeSpan();
+Console.WriteLine(timeSpan);
+
+var timeSpanNanosegundos = new TimeSpan(1);
+Console.WriteLine(timeSpanNanosegundos);
+
+var timeSpanHoraMinutoSegundo = new TimeSpan(17, 11, 7);
+Console.WriteLine(timeSpanHoraMinutoSegundo);
+
+var timeSpanDiaHoraMinutoSegundo = new TimeSpan(3, 5, 12, 8);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
+
+var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(3, 5, 12, 8, 100);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilissegundo);
+
+Console.WriteLine(timeSpanHoraMinutoSegundo - timeSpanDiaHoraMinutoSegundo);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Days);
+Console.WriteLine(timeSpanDiaHoraMinutoSegundo.Add(new TimeSpan(12, 0, 0)));
+*/
+
+
+/*
+var dataUtc = DateTime.UtcNow;
 var timeZoneBrasil = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time");
 var dataBrasil = TimeZoneInfo.ConvertTimeFromUtc(dataUtc, timeZoneBrasil);
 
@@ -12,7 +48,7 @@ foreach (var timezone in timezones)
     Console.WriteLine(timezone);
     Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(dataUtc, timezone));
 }
-
+*/
 
 /*
 using System.Globalization;
